@@ -1,45 +1,31 @@
-* {
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.pbg1 {
+.pbg {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    background-attachment: fixed; /* Efecto Parallax*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+
+.first {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images3.alphacoders.com/119/thumb-1920-1193003.jpg");
     background-attachment: fixed; /* Efecto Parallax*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: auto;
 }
 
-.pbg2 {
-    max-width: 100%;
-    width: 100vw;
-    height: 100vh;
+.second {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://conocedores.com/wp-content/uploads/2021/12/SpiderMan-3-8.jpg");
     background-attachment: fixed; /* Efecto Parallax*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: auto;
 }
 
-.pbg3 {
-    max-width: 100%;
-    width: 100vw;
-    height: 100vh;
+.third {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images3.alphacoders.com/119/thumb-1920-1190724.png");
     background-attachment: fixed; /* Efecto Parallax*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: auto;
 }
 
 .title-container {
@@ -71,8 +57,13 @@ h1 {
     max-width: 100%;
     height: 30vh;
     text-align: center;
-    padding: 20px;
+    overflow: auto;
 }
+
+.text {
+    line-height: 1.5;
+}
+
 .dark {
     color: #fff;
     background-color: rgb(42, 42, 42);
@@ -88,9 +79,11 @@ h1 {
 }
 
 h2 {
+    text-transform: uppercase;
     font-size: 30px;
 }
 
 p {
     font-size: 18px;
+    line-height: 2;
 }

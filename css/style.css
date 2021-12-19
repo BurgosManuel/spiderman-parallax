@@ -6,7 +6,6 @@ body {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed; /* Efecto Parallax*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

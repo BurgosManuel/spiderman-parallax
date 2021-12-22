@@ -1,101 +1,102 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
 }
 
 .pbg {
-    max-width: 100%;
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: auto;
 }
 
 .first {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images3.alphacoders.com/119/thumb-1920-1193003.jpg");
-    background-attachment: fixed; /* Efecto Parallax*/
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images3.alphacoders.com/119/thumb-1920-1193003.jpg");
+    background-attachment: fixed;
 }
 
 .second {
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://conocedores.com/wp-content/uploads/2021/12/SpiderMan-3-8.jpg");
-    background-attachment: fixed; /* Efecto Parallax*/
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://conocedores.com/wp-content/uploads/2021/12/SpiderMan-3-8.jpg");
+    background-attachment: fixed;
 }
 
 .third {
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images3.alphacoders.com/119/thumb-1920-1190724.png");
-    background-attachment: fixed; /* Efecto Parallax*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images3.alphacoders.com/119/thumb-1920-1190724.png");
+    background-attachment: fixed;
 }
 
-.title-container {
+.container {
     position: relative;
     margin: auto;
     top: 50%;
-    width: 500px;
-    height: 80px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #000;
-    user-select: none;
+    width: 25vw;
+    height: 10vh;
+    border-radius: 5px;
     text-align: center;
+    background-color: #b11313e3;
 }
 
-.title-container:hover {
-    box-shadow: 0px 0px 10px #fff;
-}
-
-.title-text {
-    letter-spacing: 3px;
-    line-height: 2.5em;
-    font-size: 30px;
+.title {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 3em;
     font-weight: 300;
 }
 
-.title-container-transparent {
-    position: relative;
-    margin: auto;
-    top: 50%;
-    width: 500px;
-    height: 80px;
-    user-select: none;
-    text-align: center;
-    color: #fff;
-}
-
 .article-container {
-    display: block;
     width: 100vw;
     max-width: 100%;
     height: 30vh;
     text-align: center;
-    overflow: auto;
+    box-shadow: 0 0 15px #000;
+    z-index: 10;
 }
 
-.text {
-    line-height: 1.5;
+.article-container .title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7em;
+    padding: 0 25px
 }
 
 .dark {
     color: #fff;
     background-color: rgb(42, 42, 42);
 }
-.light {
-    color: #000;
-    background-color: rgb(233, 233, 233);
-}
 
-.red {
+
+.transparent {
     color: #fff;
-    background-color: #B11313;
+    background-color: transparent;
 }
 
-h2 {
-    text-transform: uppercase;
+.middle-container {
+    position: relative;
+    margin: auto;
+    top: 20%;
+    width: 50vw;
+    height: 20vh;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.middle-text {
+    line-height: 1.5;
     font-size: 30px;
+    font-weight: 300;
 }
 
-p {
-    font-size: 18px;
-    line-height: 2;
+a {
+    text-decoration: none;
 }
